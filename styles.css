@@ -1,0 +1,176 @@
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+    
+     :root {
+        --Violet: hsl(257, 40%, 49%);
+        --Soft-Magenta: hsl(300, 69%, 71%);
+    }
+    
+    * {
+        box-sizing: border-box;
+        padding: 0rem;
+        margin: 0rem;
+    }
+    
+    body {
+        background-color: var(--Violet);
+        font-family: 'Open Sans', sans-serif;
+        /*font-family: 'Poppins', sans-serif;*/
+        color: white;
+        background-image: url(/images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: left 0vw top 0vh right 0vh;
+        background-size: cover;
+    }
+    
+    .top {
+        display: flex;
+        padding: 2.3rem 3rem 4.7rem 3rem;
+    }
+    
+    .top img {
+        width: 180px;
+    }
+    
+    .container .mid-image {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container .mid-image img {
+        width: 400px;
+    }
+    
+    .container .foot {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+    }
+    
+    .container .foot i {
+        padding-right: 10px;
+    }
+    
+    .container .foot i:last-of-type {
+        padding-right: 0px;
+    }
+    
+    .container .mid-inf {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 4.5rem auto;
+        width: 330px;
+    }
+    
+    .container header h1 {
+        text-align: center;
+        padding-bottom: 1rem;
+        max-width: fit-content;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+    
+    .container header p {
+        text-align: center;
+        padding-bottom: 2rem;
+        max-width: fit-content;
+        letter-spacing: 1px;
+    }
+    
+    .container header button {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0rem;
+        border-radius: 25px;
+        color: var(--Violet);
+        border-style: none;
+        box-shadow: 1px 1px 17px 5px rgba(0, 0, 0, 0.29);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+    
+    .container header .btn:hover {
+        cursor: pointer;
+        background-color: var(--Soft-Magenta);
+        color: white;
+    }
+    
+    .container .foot i {
+        border: white solid 1px;
+        border-radius: 50%;
+        padding: 1rem;
+        margin: 0.5rem;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+    }
+    
+    .container .foot {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+    
+    .container .foot i:hover {
+        border: hsl(300, 62%, 52%) solid 1px;
+        color: hsl(300, 62%, 52%);
+        cursor: pointer;
+    }
+    
+    .attribution {
+        margin-bottom: 2rem;
+    }
+    
+    .attribution a {
+        color: black;
+    }
+    
+    .attribution a:hover {
+        color: hsl(300, 62%, 52%);
+    }
+    
+    @media(min-width: 1500px) {
+        body {
+            background-image: url(/images/bg-desktop.svg);
+            background-position: left 0vw bottom 0vh;
+            min-height: 100vh;
+        }
+        .container .mid-container {
+            display: flex;
+            min-width: none;
+        }
+        .container .mid-container .mid-image img {
+            min-width: 800px;
+        }
+        .container .mid-container .mid-inf h1 {
+            text-align: left;
+        }
+        .container .mid-container .mid-inf p {
+            text-align: left;
+        }
+        .container .mid-container .mid-inf button {
+            width: 40%;
+        }
+        .container .mid-container .mid-inf {
+            width: 510px;
+        }
+        .container .foot {
+            display: flex;
+            justify-content: right;
+            margin-right: 5rem;
+            margin-bottom: 4rem;
+        }
+        .container .mid-image {
+            margin-left: 60px;
+        }
+    }
